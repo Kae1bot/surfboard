@@ -34,7 +34,7 @@ jobs:
 
       - name: 混淆 BPB worker.js
         run: |
-          javascript-obfuscator origin.js --output _worker.js \
+          javascript-obfuscator origin.js --output src/_worker.js \
             --compact true \
             --control-flow-flattening false \
             --dead-code-injection false \
