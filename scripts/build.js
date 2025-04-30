@@ -51,7 +51,7 @@ async function buildWorker() {
     const faviconBase64 = faviconBuffer.toString('base64');
 
     const code = await build({
-        entryPoints: [join(__dirname, '../_worker.js')],
+        entryPoints: [join(__dirname, '../src/_worker.js')],
         bundle: true,
         format: 'esm',
         write: false,
