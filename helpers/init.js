@@ -1,5 +1,5 @@
 import { isValidUUID } from "./helpers";
-import pkg from '../../package.json' with { type: 'json' };
+import pkg from '../../package.json';
 
 export function initializeParams(request, env) {
     const proxyIPs = env.PROXY_IP?.split(',').map(proxyIP => proxyIP.trim());
